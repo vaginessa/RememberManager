@@ -48,39 +48,65 @@ table {
 	border-spacing: 0;
 }
 /* ---- reset css ---- */
+.container {
+    width: 85%;
+    display: flex;
+    text-align: center;
+}
+
+.container .row {
+    margin: 0;
+}
+
+aside {
+    width: 30%;
+}
 
 main {
     /*background-color: rgb(220, 220, 220);*/
-    text-align: center;
 }
-    .container nav.row {
-        height: 40px;
-        margin: 20px -12px 0;
-        background-color:#8BC34A;
-    }
-    .container nav.row:hover {
-        box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    }
-    header {
-        background-color: black;
-    }
+.container nav.row {
+    height: 40px;
+    margin: 16px 0;
+    background-color: #8993ec;
+}
 
-    .container .row {
-        
-    }
-    /*This followings should be encapsulated*/
-    .container .card-panel {
-        display: inline-block;
-        width: 60px;
-        margin: 20px;
-    }
-    .container .card-panel:hover {
-        box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    }
+.container nav.row img {
+    /*box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    */
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 
-        [type="checkbox"].filled-in:checked+label:after {
-            border-radius: 50%;
-            border: 2px solid #AED581;
-            background-color: #689F38;
-        }
-    /*end of css definition*/
+}
+
+.container nav.row img:hover {
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*This followings should be encapsulated*/
+.open-tab-section {
+    float: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card-panel {
+    display: inline-block;
+    width: 120px;
+    margin: 10px 16px;
+    transition: all 0.5s ease-in-out;
+}
+.container .card-panel:hover {
+    box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+    [type="checkbox"].filled-in:checked+label:after {
+        border-radius: 50%;
+        border: 2px solid #AED581;
+        background-color: #689F38;
+    }
+/*end of css definition*/
